@@ -1,0 +1,7 @@
+{
+  "products": [
+    { "id": 1, "name": "Basic", "price": 9.99 },
+    { "id": 2, "name": "Standard", "price": 14.99 },
+    { "id": 3, "name": "Premium", "price": 19.99 }
+  ]
+}
