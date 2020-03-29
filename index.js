@@ -16,20 +16,33 @@ fetch("http://my-json-server.typicode.com/vandaadams/ht-checkout-challenge/db")
 
     counter = 0
     productPrices.forEach((product) => {
-      product.textContent = `${results[counter].price}`;
+      product.textContent = `£${results[counter].price}`;
       counter += 1;
     });
 
   });
 
 // 2. send post request to api when submit button is clicked
-const form = document.getElementById("form");
-
-form.addEventListener('submit', ((element) => {
-  element.preventDefault();
-  firstName = document.getElementById("fname").value;
-  lastName = document.getElementById("lname").value;
-  email = document.getElementById("email").value;
+const createAccount = (event) => {
+  event.preventDefault();
+  const firstName = document.getElementById("fname").value;
+  const lastName = document.getElementById("lname").value;
+  const email = document.getElementById("email").value;
   // console.log(firstName, lastName, email)
-});
-);
+  fetch("http://my-json-server.typicode.com/vandaadams/ht-checkout-challenge/accounts", {
+    method: "POST",
+    body: JSON.stringify({
+      first_name:firstName,
+      last_name:lastName,
+      email_address:email
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+    })
+    .then(response => response.json())
+    .then(json => console.log(json))
+};
+
+const form = document.getElementById("form");
+form.addEventListener('submit', createAccount);
