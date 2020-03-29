@@ -21,7 +21,7 @@
   ],
   "contracts": [
     {
-      "account_id": 1
+      "accountId": 1
     }
   ]
 }
