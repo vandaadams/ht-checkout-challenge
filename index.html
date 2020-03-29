@@ -7,18 +7,19 @@
   <body>
     <h1>HomeTree Checkout Challenge</h1>
     <h3>Select Product</h3>
-    <form action="index.php">
+    <form id="form">
       <input type="radio" name="product" value="1" id="product-name"/>
       <p id="product-price"></p>
       <input type="radio" name="product" value="2" id="product-name"/>
       <p id="product-price"></p>
       <input type="radio" name="product" value="3" id="product-name"/>
       <p id="product-price"></p>
-      <input type="text" name="first_name" placeholder="First name">
-      <input type="text" name="last_name" placeholder="Last name">
-      <input type="text" name="email" placeholder="Email">
+      <input type="text" name="fname" id="fname" placeholder="First name">
+      <input type="text" name="lname" id="lname" placeholder="Last name">
+      <input type="text" name="email" id="email" placeholder="Email">
       <input type="submit" value="Purchase" name="submit">
     </form>
   </body>
   <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </html>
