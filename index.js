@@ -1,5 +1,5 @@
 // 1. populate radio elements of form from api
-const productNames = document.querySelectorAll("#product-name");
+const productNames = document.querySelectorAll(".product-name");
 const productPrices = document.querySelectorAll("#product-price");
 
 fetch("http://my-json-server.typicode.com/vandaadams/ht-checkout-challenge/db")
@@ -10,6 +10,8 @@ fetch("http://my-json-server.typicode.com/vandaadams/ht-checkout-challenge/db")
     let counter = 0
 
     productNames.forEach((product) => {
+      product.value = `${results[counter].name}`;
+      product.id = `${results[counter].id}`;
       product.insertAdjacentText("afterend", `${results[counter].name}`);
       counter += 1;
     });
@@ -22,14 +24,14 @@ fetch("http://my-json-server.typicode.com/vandaadams/ht-checkout-challenge/db")
 
   });
 
-// 2. send post request to api when submit button is clicked
+// 2. create user account with post request to api when submit button is clicked
 const createAccount = (event) => {
   event.preventDefault();
   const firstName = document.getElementById("fname").value;
   const lastName = document.getElementById("lname").value;
   const email = document.getElementById("email").value;
-  // console.log(firstName, lastName, email)
-  fetch("http://my-json-server.typicode.com/vandaadams/ht-checkout-challenge/accounts", {
+
+  fetch("http://localhost:3000/accounts", {
     method: "POST",
     body: JSON.stringify({
       first_name:firstName,
@@ -46,3 +48,7 @@ const createAccount = (event) => {
 
 const form = document.getElementById("form");
 form.addEventListener('submit', createAccount);
+
+// const createContract = (event) => {
+//
+// };

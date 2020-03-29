@@ -17,11 +17,14 @@
     }
   ],
   "accounts": [
-
+    {
+      "first_name": "Test",
+      "last_name": "Tester",
+      "email_address": "test@test.com",
+      "id": 1
+    }
   ],
   "contracts": [
-    {
-      "accountId": 1
-    }
+    
   ]
 }
