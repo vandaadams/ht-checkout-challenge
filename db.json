@@ -18,5 +18,10 @@
   ],
   "accounts": [
 
+  ],
+  "contracts": [
+    {
+      "account_id": 1
+    }
   ]
 }
