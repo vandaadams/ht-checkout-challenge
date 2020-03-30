@@ -1,6 +1,45 @@
 body {
   font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
 }
 
-.container {
+form {
+  margin: 48px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 32px;
+}
+
+/* input[type="radio"] {
+   display: none;
+} */
+
+label {
+  width: 200px;
+  height: 150px;
+  background: rgb(200, 200, 200);
+  border-radius: 4px;
+  margin: 8px;
+  padding: 55px;
+}
+
+.user-input {
+  margin: 16px 0;
+}
+
+.input-card {
+  padding-left: 32px;
+  border-left: 2px solid black;
+}
+
+.radio-card {
+  padding-right: 32px;
+}
+
+.input-card h3,
+.radio-card h3 {
+  margin-top: 0;
 }
