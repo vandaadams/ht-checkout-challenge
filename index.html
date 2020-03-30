@@ -2,23 +2,42 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>HomeTree</title>
   </head>
   <body>
-    <h1>HomeTree Checkout Challenge</h1>
-    <h3>Select Product</h3>
-    <form id="form">
-      <input type="radio" name="product" class="product-name" checked="checked"/>
-      <p id="product-price"></p>
-      <input type="radio" name="product" class="product-name"/>
-      <p id="product-price"></p>
-      <input type="radio" name="product" class="product-name"/>
-      <p id="product-price"></p>
-      <input type="text" name="fname" id="fname" placeholder="First name">
-      <input type="text" name="lname" id="lname" placeholder="Last name">
-      <input type="text" name="email" id="email" placeholder="Email">
-      <input type="submit" value="Purchase" name="submit">
-    </form>
+    <div class="container">
+      <h1>HomeTree Checkout Challenge</h1>
+      <h3>Select Product</h3>
+      <form id="form">
+        <div class="radio-buttons">
+          <label>
+            <input type="radio" name="product" class="product-name" checked="checked"/>
+            <span><i class="fa fa-fire" aria-hidden="true"></i></span>
+            <p id="product-price"></p>
+          </label>
+          <label>
+            <input type="radio" name="product" class="product-name"/>
+            <span><i class="fa fa-fire" aria-hidden="true"></i></span>
+            <p id="product-price"></p>
+          </label>
+          <label>
+            <input type="radio" name="product" class="product-name"/>
+            <span><i class="fa fa-fire" aria-hidden="true"></i></span>
+            <p id="product-price"></p>
+          </label>
+        </div>
+        <div class="user-details">
+          <input type="text" name="fname" id="fname" placeholder="First name">
+          <input type="text" name="lname" id="lname" placeholder="Last name">
+          <input type="text" name="email" id="email" placeholder="Email">
+        </div>
+        <input type="submit" value="Purchase" name="submit">
+      </form>
+    </div>
   </body>
   <script src="index.js"></script>
 </html>

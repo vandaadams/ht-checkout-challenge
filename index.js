@@ -1,4 +1,4 @@
-// 1. populate radio button elements of form from api
+// 1. populates radio button elements of form from api
 const productNames = document.querySelectorAll(".product-name");
 const productPrices = document.querySelectorAll("#product-price");
 
@@ -24,7 +24,7 @@ fetch("http://my-json-server.typicode.com/vandaadams/ht-checkout-challenge/db")
 
   });
 
-// 2. create user account with post request to api when submit button is clicked
+// 2. creates user account & contract with post request to api when submit button is clicked
 const createAccount = (event) => {
   event.preventDefault();
   const firstName = document.getElementById("fname").value;
