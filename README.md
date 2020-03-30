@@ -1,5 +1,7 @@
 ## How to run the Project
 
+Download the repository and open it from the terminal
+
 Install JSON Server
 
 ```
@@ -19,7 +21,7 @@ http://localhost:3000/accounts
 http://localhost:3000/accounts/<account_id>/contracts
 ```
 
-Open index.html in browser from file path
+Open index.html in browser
 
 ## Walkthrough
 
