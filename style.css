@@ -5,6 +5,8 @@ body {
 
 form {
   margin: 48px;
+  background-color: #F4F4F9;
+  padding: 24px;
 }
 
 .form {
@@ -16,6 +18,9 @@ form {
 /* input[type="radio"] {
    display: none;
 } */
+.product-name {
+  margin-right: 4px;
+}
 
 label {
   width: 200px;
@@ -50,4 +55,6 @@ label {
   align-items: center;
   height: 400px;
   width: 100%;
+  background-color: #F4F4F9;
+  margin-top: 48px;
 }
