@@ -1,4 +1,4 @@
-// 1. populate radio elements of form from api
+// 1. populate radio button elements of form from api
 const productNames = document.querySelectorAll(".product-name");
 const productPrices = document.querySelectorAll("#product-price");
 
@@ -10,7 +10,7 @@ fetch("http://my-json-server.typicode.com/vandaadams/ht-checkout-challenge/db")
     let counter = 0
 
     productNames.forEach((product) => {
-      product.value = `${results[counter].name}`;
+      product.value = `${results[counter].price}`;
       product.id = `${results[counter].id}`;
       product.insertAdjacentText("afterend", `${results[counter].name}`);
       counter += 1;
@@ -30,8 +30,9 @@ const createAccount = (event) => {
   const firstName = document.getElementById("fname").value;
   const lastName = document.getElementById("lname").value;
   const email = document.getElementById("email").value;
+  let account_id = 0;
 
-  fetch("http://localhost:3000/accounts", {
+  fetch("http://my-json-server.typicode.com/vandaadams/ht-checkout-challenge/accounts", {
     method: "POST",
     body: JSON.stringify({
       first_name:firstName,
@@ -43,12 +44,33 @@ const createAccount = (event) => {
     }
     })
     .then(response => response.json())
-    .then(json => console.log(json))
+    //.then(json => console.log(json))
+    .then((data) => {
+      account_id = data.id
+      console.log(account_id)
+    })
+    .then(createContract = () => {
+      productNames.forEach((product) => {
+        if (product.checked) {
+          console.log(product)
+          product_id = product.id;
+          price = product.value;
+        }
+      })
+      fetch(`http://my-json-server.typicode.com/vandaadams/ht-checkout-challenge/accounts/${account_id}`, {
+        method: "POST",
+        body: JSON.stringify({
+          product_id:product_id,
+          price:price
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8"
+        }
+        })
+        .then(response => response.json())
+        .then(json => console.log(json))
+    })
 };
 
 const form = document.getElementById("form");
 form.addEventListener('submit', createAccount);
-
-// const createContract = (event) => {
-//
-// };

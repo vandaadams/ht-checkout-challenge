@@ -1,0 +1,5 @@
+{
+  "/products\\?id=:id": "/products/:id",
+  "/accounts\\?id=:id": "/accounts/:id",
+  "/accounts\\?id=:id\\contracts": "/accounts/:id/contracts",
+}
