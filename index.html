@@ -10,32 +10,35 @@
   <body>
     <div class="container">
       <h1>HomeTree Checkout Challenge</h1>
-      <form id="form">
-        <div class="form">
-          <div class="radio-card">
-            <h3>Select Product</h3>
-            <label>
-              <input type="radio" name="product" class="product-name" checked="checked"/>
-              <p id="product-price"></p>
-            </label>
-            <label>
-              <input type="radio" name="product" class="product-name"/>
-              <p id="product-price"></p>
-            </label>
-            <label>
-              <input type="radio" name="product" class="product-name"/>
-              <p id="product-price"></p>
-            </label>
+      <h3 id="msg"></h3>
+      <div id="content">
+        <form id="form">
+          <div class="form">
+            <div class="radio-card">
+              <h3>Select a product</h3>
+              <label class="labels">
+                <input type="radio" name="product" class="product-name" checked="checked"/>
+                <p id="product-price"></p>
+              </label>
+              <label class="labels">
+                <input type="radio" name="product" class="product-name"/>
+                <p id="product-price"></p>
+              </label>
+              <label class="labels">
+                <input type="radio" name="product" class="product-name"/>
+                <p id="product-price"></p>
+              </label>
+            </div>
+            <div class="input-card">
+              <h3>Enter your details</h3>
+              <input type="text" class="form-control user-input" name="fname" id="fname" placeholder="First name">
+              <input type="text" class="form-control user-input" name="lname" id="lname" placeholder="Last name">
+              <input type="text" class="form-control user-input" name="email" id="email" placeholder="Email">
+            </div>
           </div>
-          <div class="input-card">
-            <h3>Enter your details</h3>
-            <input type="text" class="form-control user-input" name="fname" id="fname" placeholder="First name">
-            <input type="text" class="form-control user-input" name="lname" id="lname" placeholder="Last name">
-            <input type="text" class="form-control user-input" name="email" id="email" placeholder="Email">
-          </div>
-        </div>
-        <input type="submit" value="Purchase" name="submit" class="btn btn-primary">
-      </form>
+          <input type="submit" value="Purchase" name="submit" class="btn btn-primary">
+        </form>
+      </div>
     </div>
   </body>
   <script src="index.js"></script>

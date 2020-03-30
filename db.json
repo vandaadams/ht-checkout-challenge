@@ -26,8 +26,8 @@
   ],
   "contracts": [
     {
-      "product_id": "2",
-      "price": "14.99",
+      "product_id": "1",
+      "price": "9.99",
       "accountId": "1",
       "id": 1
     }

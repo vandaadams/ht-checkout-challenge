@@ -71,6 +71,14 @@ const createAccount = (event) => {
           .then(response => response.json())
           .then(json => console.log(json))
       })
+      .then(
+        clearPage = () => {
+          document.getElementById("content").innerHTML = "";
+          document.getElementById("msg").className = "center";
+          document.getElementById("msg").innerHTML = "Thank you for your purchase!";
+        }
+      )
+
 };
 
 const form = document.getElementById("form");
