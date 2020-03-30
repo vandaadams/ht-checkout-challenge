@@ -27,7 +27,7 @@ I created a form in HTML which I populated using a fake API JSON file. On clicki
 
 ## Reflection
 
-Overall I had fun and learnt a lot during this challange. This was the first time I used a fake api, and I found it challenging to set it up. If I were to continue, I would create a router with custom error messages. I would also add the email confirmation function, and do more work on the front end.
+Overall I had fun and learnt a lot during this challenge. This was the first time I used a fake api, and I found it challenging to set it up. If I were to continue, I would create a router with custom error messages. I would also add the email confirmation function, and do more work on the front end.
 
 ## Design
 
