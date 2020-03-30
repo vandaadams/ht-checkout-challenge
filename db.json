@@ -25,6 +25,11 @@
     }
   ],
   "contracts": [
-    
+    {
+      "product_id": "2",
+      "price": "14.99",
+      "accountId": "1",
+      "id": 1
+    }
   ]
 }
