@@ -29,3 +29,10 @@ I created a form in HTML which I populated using a fake API JSON file. On clicki
 
 Overall I had fun and learnt a lot during this challange. This was the first time I used a fake api, and I found it challenging to set it up. If I were to continue, I would create a router with custom error messages. I would also add the email confirmation function, and do more work on the front end.
 
+## Design
+
+Schema
+![alt text](https://github.com/vandaadams/ht-checkout-challenge/blob/master/images/Screenshot%202020-03-29%20at%2013.25.40.png)
+
+Wireframe
+![alt text](https://github.com/vandaadams/ht-checkout-challenge/blob/master/images/Screenshot%202020-03-28%20at%2010.50.39.png)
